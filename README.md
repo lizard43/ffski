@@ -12,12 +12,9 @@ Fantasy Football Average Draft Position (ADP)
 - Open browser
     - [Local](http://localhost:8080/)
 
-| <img src="https://github.com/lizard43/ffski/blob/main/public/main.png" width="500" /> |
-| <img src="https://github.com/lizard43/ffski/blob/main/main/public/search.png" width="500" /> |
-| <img src="https://github.com/lizard43/ffski/blob/main/public/filterposition.png" width="500" /> |
-
-
-
+<img src="https://github.com/lizard43/ffski/blob/main/public/main.png" width="500" />
+<img src="https://github.com/lizard43/ffski/blob/main/main/public/search.png" width="500" />
+<img src="https://github.com/lizard43/ffski/blob/main/public/filterposition.png" width="500" />
 
 ## Data
 Uses the REST API provided by Fantasy Football Calculator
