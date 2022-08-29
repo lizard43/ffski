@@ -102,6 +102,7 @@
           <td></td>
           <td></td>
           <td></td>
+          <td></td>
         </tr>
       </thead>
       <tbody>
@@ -114,6 +115,9 @@
           <td>{{ td.high }}</td>
           <td>{{ td.low }}</td>
           <td>{{ td.bye }}</td>
+          <td class="center:flex-items highlite">
+             <DraftedPlayer/>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -121,11 +125,13 @@
 </template>
 
 <script>
+import DraftedPlayer from "./DraftedPlayer";
 import { $array, $object } from "../assets/alga.js";
 import axios from "axios";
 
 export default {
   name: "DataTable",
+  components: { DraftedPlayer },
   data() {
     return {
       columns: [
@@ -137,6 +143,7 @@ export default {
         { name: "high", text: "High" },
         { name: "low", text: "Low" },
         { name: "bye", text: "Bye" },
+        { name: "drafted", text: "Drafted" },
       ],
       showYear: Array.from(
         { length: 11 },
@@ -270,5 +277,11 @@ export default {
 <style scoped>
 .rootcta {
   margin: 50px;
+}
+.highlite {
+  color: black;
+}
+.highlite:hover {
+  color: red;
 }
 </style>
